@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- page title and icon -->
+    <title>Add Device</title>
+</head>
+<body class="min-h-dvh bg-sky-950 flex flex-col">
+    <!-- menorah header -->
+    <div class="py-5 bg-sky-950 border-b-2 border-gray-300">
+        <div class="pl-5 font-extrabold text-3xl text-gray-50">
+            menorah.
+        </div>
+    </div>
+    <!-- add device form -->
+    <div class="p-2 flex flex-col flex-1 gap-y-2 bg-gray-50">
+        <div class="py-4 rounded-xl text-xl text-sky-950 bg-gray-300 border border-sky-950">
+            <div class="pl-4">
+                <form method="POST">
+                    <div class="pb-4 font-semibold">
+                        Add Device
+                    </div>
+                    <div class="pb-2">
+                        <label for="name" class="font-light sr-only">Name</label>
+                        <input type="text" id="name" name="name" class="p-4 border border-sky-950 rounded-xl" placeholder="Device Name">
+                    </div>
+                    <div class="pb-2">
+                        <label for="mac" class="font-light sr-only">MAC Address</label>
+                        <input type="text" id="mac" name="mac" class="p-4 border border-sky-950 rounded-xl" placeholder="MAC Address">
+                    </div>
+                    <input type="submit" value="Add" class="p-4 font-light text-gray-300 bg-sky-950 rounded-xl">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
